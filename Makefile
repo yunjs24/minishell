@@ -6,7 +6,7 @@
 #    By: junsyun <junsyun@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 04:29:34 by junsyun           #+#    #+#              #
-#    Updated: 2023/01/04 02:27:43 by junsyun          ###   ########.fr        #
+#    Updated: 2023/01/04 16:31:31 by junsyun          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,13 +39,13 @@ SIG				= sig_handler
 SRCS 			= $(addsuffix .c, $(addprefix src/, $(MAIN))) \
 					$(addsuffix .c, $(addprefix src/excution/, $(EXEC))) \
 					$(addsuffix .c, $(addprefix src/parser/, $(SIG))) \
-					$(addsuffix .c, $(addprefix src/builtin/, $(BUILTIN))) \
+					$(addsuffix .c, $(addprefix src/builtin/, $(BUILTIN)))
 OBJS 			= $(SRCS:c=o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	@make -j -C $(LIB_DIR)/libft
-	@$(CC) $(CFLAGS) -o $@ $^ $(LIB_DIR)/$(LIBFT) $(LIB_READ) $(LDFLAGS) $(CPPFLAGS)
+	@$(CC) $(CFLAGS) -o $@ $^ $(LIB_DIR)/$(LIBFT) $(LIB_READ)  $(CPPFLAGS)
 
 %.o: %.c $(HEADERS)/$(NAME).h
 	@$(CC) $(CFLAGS) -I $(HEADERS) -c $< -o $@

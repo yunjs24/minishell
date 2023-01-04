@@ -1,10 +1,10 @@
 #include "../../includes/minishell.h"
 
-int	ft_pwd(t_token *command)
+int	ft_pwd(t_token *token)
 {
 	char	*path;
 
-	if (command == NULL)
+	if (token == NULL)
 		return (0);
 	path = getcwd(NULL, 0);
 	if (!path)
