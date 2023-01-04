@@ -6,21 +6,42 @@
 /*   By: junsyun <junsyun@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 04:19:30 by junsyun           #+#    #+#             */
-/*   Updated: 2022/10/02 04:35:18 by junsyun          ###   ########.fr       */
+/*   Updated: 2023/01/04 02:21:26 by junsyun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int	main(int argc, char **argv, char **env)
+static void	minishell_loop()
 {
-	char	**commands;
-	char	*input;
-	int		ret;
+	char	*line;
 
+	signal(SIGINT, sig_set_readline);
+	signal(SIGQUIT, SIG_IGN);
 	while (1)
 	{
-		display_prompt();
-		signal(SIGINT, signal_handler);
+		line = readline("msh$ ");
+		add_history(line);
+		
 	}
+}
+
+static char	*display_prompt()
+{
+	char	*line;
+
+	
+
+}
+
+int	main(int argc, char **argv, char **env)
+{
+	char	*commands;
+	// char	*input;
+	// int		ret;
+
+	(void)(argc);
+	(void)(argv);
+	(void)(env);
+	minishell_loop();
 }
