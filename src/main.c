@@ -6,11 +6,11 @@
 /*   By: junsyun <junsyun@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 04:19:30 by junsyun           #+#    #+#             */
-/*   Updated: 2023/01/04 16:34:04 by junsyun          ###   ########.fr       */
+/*   Updated: 2023/01/09 04:21:50 by junsyun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/minishell.h"
+#include "../include/minishell.h"
 
 static void	minishell_loop()
 {
@@ -26,11 +26,11 @@ static void	minishell_loop()
 	}
 }
 
-static char	*display_prompt()
-{
-	// char	*line;
-	return NULL;
-}
+// static char	*display_prompt()
+// {
+// 	// char	*line;
+// 	return NULL;
+// }
 
 int	main(int argc, char **argv, char **env)
 {

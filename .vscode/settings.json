@@ -6,6 +6,7 @@
 		"libft.h": "c",
 		"struct.h": "c",
 		"builtin.h": "c",
-		"dirent.h": "c"
+		"dirent.h": "c",
+		"history.h": "c"
 	}
 }

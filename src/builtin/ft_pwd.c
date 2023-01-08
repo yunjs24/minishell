@@ -1,4 +1,4 @@
-#include "../../includes/minishell.h"
+#include "../../include/minishell.h"
 
 int	ft_pwd(t_token *token)
 {

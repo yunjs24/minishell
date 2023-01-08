@@ -7,5 +7,5 @@ int	execution()
 	status = EXIT_SUCCESS;
 	signal(SIGINT, &sig_exec);
 	signal(SIGQUIT, &sig_exec);
-
+	return (0);
 }

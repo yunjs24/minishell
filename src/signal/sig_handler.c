@@ -1,8 +1,8 @@
-#include "../../includes/minishell.h"
+#include "../../include/minishell.h"
 
 void	sig_set_readline(int sig)
 {
-	if (sig = SIGINT)
+	if (sig == SIGINT)
 	{
 		write(1, "\n", 1);
 		rl_on_new_line();
