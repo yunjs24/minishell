@@ -6,7 +6,7 @@
 /*   By: junsyun <junsyun@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 04:21:14 by junsyun           #+#    #+#             */
-/*   Updated: 2023/01/09 05:10:24 by junsyun          ###   ########.fr       */
+/*   Updated: 2023/01/09 07:30:07 by junsyun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,13 @@
 # include <readline/readline.h>
 # include <readline/history.h>
 
-
-// # include "../readline/8.2.1/include/readline/readline.h"
-// # include "../readline/8.2.1/include/readline/history.h"
-// # include "../readline/8.2.1/include/readline/"
-
 # include "struct.h"
 # include "builtin.h"
 # include "sig_handler.h"
-# include "execution.h"
+# include "executer.h"
+# include "error.h"
 # include "../lib/libft/libft.h"
 
-t_global	g_info;                                                                                                                                                                                                                                                                                                                                            
+t_global	g_info;                                                                                                                                                                                                                                                                                                                                        
 
 #endif

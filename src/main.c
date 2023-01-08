@@ -6,11 +6,11 @@
 /*   By: junsyun <junsyun@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 04:19:30 by junsyun           #+#    #+#             */
-/*   Updated: 2023/01/09 04:21:50 by junsyun          ###   ########.fr       */
+/*   Updated: 2023/01/09 08:07:27 by junsyun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/minishell.h"
+#include "../includes/minishell.h"
 
 static void	minishell_loop()
 {
@@ -21,8 +21,13 @@ static void	minishell_loop()
 	while (1)
 	{
 		line = readline("msh$ ");
+		if (!line)
+		{
+			error_push("exit");
+			exit(1);
+		}
 		add_history(line);
-		
+		exec_line(line);
 	}
 }
 

@@ -1,4 +1,4 @@
-#include "../../include/minishell.h"
+#include "../../includes/minishell.h"
 
 int	ft_exit(t_token *token)
 {

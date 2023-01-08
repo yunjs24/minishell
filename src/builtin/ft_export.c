@@ -1,5 +1,5 @@
 
-#include "../../include/minishell.h"
+#include "../../includes/minishell.h"
 
 int	ft_export(t_token *token)
 {

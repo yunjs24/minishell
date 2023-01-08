@@ -4,7 +4,17 @@
 typedef struct s_global
 {
 	/* data */
+	int					old_stdin;
+	int					old_stdout;
+
 }	t_global;
+
+typedef struct s_env
+{
+	char				*key;
+	char				*value;
+	struct s_env		*next;
+}	t_env;
 
 enum	e_token_type
 {
