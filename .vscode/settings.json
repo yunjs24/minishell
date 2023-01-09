@@ -8,6 +8,12 @@
 		"builtin.h": "c",
 		"dirent.h": "c",
 		"history.h": "c",
-		"readline.h": "c"
+		"readline.h": "c",
+		"sig_handler.h": "c",
+		"executer.h": "c",
+		"error.h": "c",
+		"wait.h": "c",
+		"fcntl.h": "c",
+		"const.h": "c"
 	}
 }

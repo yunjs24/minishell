@@ -19,11 +19,18 @@ typedef struct s_env
 enum	e_token_type
 {
 	UNKNOWN,
+	OR,
+	AND,
+	PIPE,
+	PARENS,
 	CMD,
 	OPTION,
-	PIPE,
-	OR,
-	AND
+	DB_QUOTE,
+	SM_QUOTE,
+	RDIR_STDIN,
+	RDIR_STDOUT,
+	RDIR_STDAPD,
+	HERE_DOC
 };
 
 typedef struct s_token

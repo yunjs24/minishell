@@ -6,7 +6,7 @@
 /*   By: junsyun <junsyun@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 04:21:14 by junsyun           #+#    #+#             */
-/*   Updated: 2023/01/09 07:30:07 by junsyun          ###   ########.fr       */
+/*   Updated: 2023/01/09 08:14:38 by junsyun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@
 # include "sig_handler.h"
 # include "executer.h"
 # include "error.h"
+# include "const.h"
 # include "../lib/libft/libft.h"
-
 t_global	g_info;                                                                                                                                                                                                                                                                                                                                        
 
 #endif

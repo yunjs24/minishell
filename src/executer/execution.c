@@ -13,5 +13,11 @@ int	execution()
 int		exec_line(char *line)
 {
 	(void)line;
+	int		status;
+
+	status = EXIT_SUCCESS;
+	tokenizer();
+	if (check_syntax() == SUCCESS && \
+		rd_hd_check() == SUCCESS)
 	return (0);
 }
