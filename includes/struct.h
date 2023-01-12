@@ -41,6 +41,12 @@ typedef struct s_token
 	struct s_token		*next;
 }	t_token;
 
+typedef struct s_rdhd
+{
+	t_tree_node	*rd_node;
+	t_token		*h_token;
+}	t_rdhd;
+
 typedef struct s_tree_node
 {
 	int					*type;
